@@ -15,7 +15,7 @@
 
 
   </form>  
-  /*
+  <script>
       var form=document.getElementById('formul');
       form.onsubmit = function(event) {
       var button=document.getElementById('submit');
@@ -23,21 +23,8 @@
         event.preventDefault();
         button.style.display="none";
         var body = new FormData(form);
-        var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  redirect: 'follow',
- body,
-};
-
-fetch("https://plant-1r9-staging.begin.app/", requestOptions)
-  .then(response => response.json().then(result => console.log(result)))
-  .catch(console.warn)
-  .finally( () => 
-  button.style.display="block"
-  )
-  
-      /* fetch('https://script.google.com/macros/s/AKfycbwp1ut6BwhBQGPqpFm-r_LxFwqyKw3-nUV1luSGe7umd_Y8CeJcABvXJeMSg8tcPhuW/exec',{
+      
+       fetch('/api',{
     method: 'post',
     body,
   })
@@ -53,7 +40,7 @@ fetch("https://plant-1r9-staging.begin.app/", requestOptions)
 };
 
 
-*/
 
+</script>
 </body>    
 </html>
