@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+  <form action="" method="post" id="formul">
+      <label for="Nom">Nom</label>
+      <input type="text" name="nom" required>
+      <label for="email">email</label>
+      <input type="email" name="email" id="em" required>
+      <label for="">message</label>
+      <textarea name="mess" cols="50" rows="1"></textarea>
+      <input type="submit" value="envoyer" id="submit">
+
+
+  </form>  
+  /*
+      var form=document.getElementById('formul');
+      form.onsubmit = function(event) {
+      var button=document.getElementById('submit');
+     try {
+        event.preventDefault();
+        button.style.display="none";
+        var body = new FormData(form);
+        var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  redirect: 'follow',
+ body,
+};
+
+fetch("https://plant-1r9-staging.begin.app/", requestOptions)
+  .then(response => response.json().then(result => console.log(result)))
+  .catch(console.warn)
+  .finally( () => 
+  button.style.display="block"
+  )
+  
+      /* fetch('https://script.google.com/macros/s/AKfycbwp1ut6BwhBQGPqpFm-r_LxFwqyKw3-nUV1luSGe7umd_Y8CeJcABvXJeMSg8tcPhuW/exec',{
+    method: 'post',
+    body,
+  })
+    .then(response=>response.json().then(data=> console.log(data)))
+    .catch( console.warn )
+    .finally( () => 
+    button.style.display="block"
+    )
+  } catch (error) {
+        console.warn(error)
+     }
+   
+};
+
+
+*/
+
+</body>    
+</html>
