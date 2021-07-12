@@ -1,4 +1,5 @@
 (async function main() {
+
     // Get a reference to the element to display our data in
     var form=document.getElementById('formul');
     form.onsubmit = function(event) {
@@ -7,7 +8,7 @@
     let req
     try {
       // Attempt to fetch data from our API
-      let data = await (await fetch('/api')).json()
+      let data = await (await fetch('/api')).text()
       console.log(data)
       req = data.req
     } catch (err) {
