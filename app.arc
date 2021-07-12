@@ -2,7 +2,7 @@
 deno-hello
 
 @http
-post /api
+get /
 
 @tables
 data
